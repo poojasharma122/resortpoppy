@@ -124,6 +124,12 @@
     .why_us_card-title {
         font-size: 1rem;
     }
+    .footer-bottom {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
   
 }
 
