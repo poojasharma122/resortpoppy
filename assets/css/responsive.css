@@ -154,6 +154,21 @@
     .hotel_desc_card h2 {
         font-size: 1.6rem;
     }
+    .row.hotel_middle_row {
+        padding: 1.5rem 0;
+    }
+    .top-heading.guide_heading {
+        font-size: 1.8rem;
+    }
+    .contact_wrap {
+          padding: 1.5rem;
+    }
+    .contact_card {
+        max-width: 100%;
+      }
+      .form_container {
+        margin-top: 2.5rem;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -171,9 +186,11 @@
     }
     .footer-logo p {
         font-size: 1rem;
-
     }
-
+    .text_part h3 {
+        font-size: 1.5rem;
+ 
+    }
     .why_us_card-title {
         font-size: 1.1rem;
     }
@@ -184,13 +201,22 @@
         font-size: 1.5rem;
 
     }
-    .banner-bg {
+    .banner-bg,.banner-bg.guides_banner
+     {
         height: 30.75rem;
     }
     .top-heading {
         font-size: 2.2rem;
     }
-   
+    .row.hotel_middle_row {
+        padding: 1rem 0;
+    }
+    .top-heading.guide_heading {
+        font-size: 1.5rem;
+    }
+    .footer-pages-wrap {
+        padding: 3.125rem 1rem;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -204,7 +230,7 @@
     .footer-top h4 {
         font-size: 1.5rem;
     }
-    .banner-bg {
+    .banner-bg ,.banner-bg.guides_banner {
         height: 25.75rem;
     }
     .brand-container a, .footer_logo a {
@@ -213,5 +239,10 @@
     .footer-bottom p {
          font-size: 0.8rem;
     }
-   
+    .menu_dropdown ul {
+        min-width: 23rem;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.5rem;
+     }
 }

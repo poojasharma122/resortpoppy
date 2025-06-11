@@ -1410,7 +1410,7 @@ section.home_banner.mb-5 {
     max-width: 500px;
     background: #fff;
     color: #111111;
-    border-radius: 0 1.25rem;
+    border-radius: 2.5rem;
     padding: 2.5rem 1.25rem;
 }
 
@@ -1419,8 +1419,9 @@ section.home_banner.mb-5 {
     margin: 0 auto;
     margin-top: -80px;
     position: relative;
-        border-radius: 2.5rem;
+    border-radius: 2.5rem;
     z-index: 999999;
+    padding: 2.5rem;
 }
 
 .form_container,
