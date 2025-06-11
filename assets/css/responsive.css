@@ -26,7 +26,9 @@
     }
     .footer-logo p {
         font-size: 1.1rem;
-
+    }
+    .home_plan_better .row {
+        flex-direction: column-reverse;
     }
 }
 
@@ -119,6 +121,9 @@
     .footer-links {
         padding-left: 0;
     }
+    .why_us_card-title {
+        font-size: 1rem;
+    }
   
 }
 
@@ -133,14 +138,23 @@
         font-size: 1rem;
     }
     .section_heading {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
     .footer-logo p {
         font-size: 1rem;
 
     }
 
+    .why_us_card-title {
+        font-size: 1.1rem;
+    }
+    .featured_img {
+        height: 15.75rem;
+    }
+    .featured_text h3 {
+        font-size: 1.5rem;
 
+    }
 
    
 }
@@ -152,6 +166,9 @@
 
     .footer-col:nth-child(3) {
         grid-column: 1/-1; 
+    }
+    .footer-top h4 {
+        font-size: 1.5rem;
     }
    
 }
