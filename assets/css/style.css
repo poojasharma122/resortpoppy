@@ -867,7 +867,7 @@ section.home_banner.mb-5 {
 }
 
 .highlighted_txt {
-    background-color: #e66a31;
+    background-color: #111111;
     padding: .625rem 1.875rem;
     border-radius: 40px;
     color: #fff;
@@ -1037,7 +1037,7 @@ section.home_banner.mb-5 {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid rgb(255 255 255 / 80%);
-    padding-top: 35px;
+    padding-top: 10px;
     margin-top: 35px;
 }
 
