@@ -214,6 +214,7 @@ input {
 .section_heading {
     color: #2c3e50;
     font-size: 2.5rem;
+    line-height: 1.3;
 }
 
 span.theme {
@@ -829,8 +830,8 @@ section.home_banner.mb-5 {
     position: absolute;
     bottom: -50px;
     z-index: 2;
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     background: #fff;
     color: #333;
     border-radius: 50%;
@@ -873,6 +874,7 @@ section.home_banner.mb-5 {
 
 .home_featured_sec {
     padding: 80px 0 120px 0;
+    overflow: hidden;
 }
 
 .home_featured_sec .section_heading {
@@ -1008,7 +1010,7 @@ section.home_banner.mb-5 {
 .footer-top {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 0.9375rem;
 }
 
 .footer-top h4 {
@@ -1018,13 +1020,13 @@ section.home_banner.mb-5 {
 }
 
 .footer-links {
-    padding-left: 60px;
+    padding-left: 3.75rem;
 }
 
 .footer-links li a,
 .footer-contact li {
     color: #ffffffdb;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     line-height: 120%;
     letter-spacing: -0.24px;
