@@ -718,6 +718,22 @@
             document.querySelector('.content').style.display = 'block';
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.getElementById("guides-toggle");
+            const dropdown = toggle.closest(".menu_dropdown");
+    
+            document.addEventListener("click", function (e) {
+                const isClickInside = dropdown.contains(e.target);
+    
+                if (isClickInside) {
+                    dropdown.classList.toggle("open");
+                } else {
+                    dropdown.classList.remove("open");
+                }
+            });
+        });
+    </script>
     <script src="assets/js/index.js"></script>
 </body>
 
