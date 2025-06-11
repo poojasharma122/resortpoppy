@@ -1422,7 +1422,7 @@ section.home_banner.mb-5 {
     margin-top: -80px;
     position: relative;
     border-radius: 2.5rem;
-    z-index: 999999;
+    z-index: 99;
     padding: 2.5rem;
 }
 
