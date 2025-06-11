@@ -76,7 +76,12 @@
 }
 
 @media screen and (max-width:575px) {
-
+    .table_wrap {
+        overflow-x: scroll;
+    }
+    table {
+        min-width: 500px;
+    }
    
 }
 

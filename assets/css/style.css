@@ -1556,3 +1556,99 @@ fieldset {
     background-repeat: no-repeat;
 }
 /* About Page CSS End */
+
+
+/* Footer Pages CSS Start*/
+.footer-pages-wrap {
+    max-width: 81.25rem;
+    margin: 0 auto;
+    padding: 3.125rem 1.875rem;
+    border-radius: 20px;
+    margin-top: -5rem;
+    position: relative;
+    background-color: #111111;
+    z-index: 99999;
+}
+
+footer.footer.pt-80.main-scroll {
+    box-shadow: rgba(255, 255, 255) 0px 3px 8px;
+    margin-top: 60px;
+}
+
+.footer-pages-content-grp {
+    margin-bottom: 1.2rem;
+    border-radius: 0.625rem;
+}
+
+.footer-pages-content-grp:last-child {
+    margin-bottom: 0px;
+}
+
+.footer-pages-content-grp h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.9375rem;
+    color: #e66a31;
+    line-height: 1.4;
+}
+
+.footer-pages-content-grp strong {
+    font-size: 1.125rem;
+}
+
+.footer-pages-content-grp p {
+    font-size: 1.0625rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-pages-content-grp ul {
+    list-style: none;
+    padding-left: 1.25rem;
+}
+
+.footer-pages-content-grp ul li {
+    list-style-type: disc;
+}
+
+.footer-pages-content-grp ul li::marker {
+    color: #e66a31;
+}
+
+.footer-pages-content-grp p a {
+    color: #e66a31;
+    display: inline-block;
+    transition: 0.4s all ease-in-out;
+    text-underline-offset: 4px;
+    font-weight: 600;
+}
+
+.footer-pages-content-grp p a:hover {
+    text-decoration: underline;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+     border: 1px solid #818181;
+  }
+
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border: 1px solid #818181;
+  }
+
+  th {
+    background-color: #E66A31;
+    color: #fff;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  .table_wrap {
+    max-width: 600px;
+}
+/* Footer Pages CSS End*/
