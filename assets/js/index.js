@@ -187,7 +187,7 @@ $('.home_featured_slider').slick({
 	autoplay: true,
 	autoplaySpeed: 1500,
 	dots: false,
-	arrows: true, // This ensures default arrows are used
+	arrows: true,
 	responsive: [
 		{
 			breakpoint: 992,
@@ -198,7 +198,7 @@ $('.home_featured_slider').slick({
 		{
 			breakpoint: 768,
 			settings: {
-				slidesToShow: 2,
+				slidesToShow: 1,
 			}
 		},
 		{
@@ -219,3 +219,21 @@ window.addEventListener('load', function () {
     document.querySelector('.content').style.display = 'block';
 });
 // Loader JS Start
+
+
+// Menu Dropdown JS Start
+document.addEventListener("DOMContentLoaded", function () {
+	const toggle = document.getElementById("guides-toggle");
+	const dropdown = toggle.closest(".menu_dropdown");
+
+	document.addEventListener("click", function (e) {
+		const isClickInside = dropdown.contains(e.target);
+
+		if (isClickInside) {
+			dropdown.classList.toggle("open");
+		} else {
+			dropdown.classList.remove("open");
+		}
+	});
+});
+// Menu Dropdown JS Start

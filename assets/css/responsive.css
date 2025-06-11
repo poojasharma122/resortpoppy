@@ -2,13 +2,29 @@
     html {
         font-size: 15px;
     }
-
-
+    .home_banner_wrap>.row {
+        flex-direction: column-reverse !important;
+    }
+    .hotel-search-form .row .col-lg-3, .hotel-search-form .row .col-lg-2 {
+        padding-bottom: 15px;
+        padding-left: 0;
+    }
+    .home_banner_content {
+        padding-top: 1.25rem;
+    }
 
 
 
 }
 
+@media screen and (max-width:1024px){
+    .text_part {
+        padding: 2rem  1.25rem 0  1.25rem;
+    }
+    .py-8 {
+        padding: 4rem 0;
+    }
+}
 
 @media (max-width: 991px) {
 
@@ -54,8 +70,7 @@
         right: 20px;
         display: block;
         text-align: end;
-        z-index: 55;
-        font-size: 21px;
+        z-index: 55;  
         height: 2rem;
         width: 2rem;
     } 
@@ -71,7 +86,9 @@
     .img_part {
         height: 20.33rem;
       }
-  
+      .py-8 {
+        padding: 3rem 0;
+    }
 
 }
 
@@ -80,7 +97,7 @@
         overflow-x: scroll;
     }
     table {
-        min-width: 500px;
+        min-width: 31.25rem;
     }
    
 }
