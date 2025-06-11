@@ -512,7 +512,9 @@ li.list-dropdown .menu_dropdown ul li a {
     height: 15px;
     margin-top: -5px;
 }
-
+.navigation-menu ul li a.active svg  {
+    fill: #e66a31;
+}
 /* Header CSS End */
 
 /* Banner CSS Start */
