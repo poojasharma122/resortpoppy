@@ -30,6 +30,9 @@
     .home_plan_better .row {
         flex-direction: column-reverse;
     }
+    .hotels_full_review_section {
+        padding: 4.25rem 0;
+    }
 }
 
 @media (max-width: 991px) {
@@ -89,6 +92,9 @@
     .banner-bg {
         height: 40.75rem;
     }
+    .hotels_name_img h2 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -138,6 +144,15 @@
     }
     .site-footer {
         padding: 55px 0 10px;
+    }
+    .no_padding_left {
+        padding-left: 1rem;
+    }
+    .hotel_full_img_outer {
+          margin-bottom: 2rem;
+    }
+    .hotel_desc_card h2 {
+        font-size: 1.6rem;
     }
 }
 

@@ -1181,7 +1181,9 @@ section.home_banner.mb-5 {
     justify-content: center;
     height: 100%;
 }
-
+.hotels_full_review_wrap {
+    width: 100%;
+}
 
 .hotels_rating_spec_txt h3 {
     color: #fff;
@@ -1249,6 +1251,15 @@ section.home_banner.mb-5 {
 .row.hotel_middle_row {
     padding: 2rem;
     border-radius: 2.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.hotels_full_review_section p {
+    line-height: 1.5;
+}
+.hotels_full_review_wrap .row {
+    max-width: 100%;
+    margin: 0 auto;
 }
 .hotel_outer_linking_btn {
     border: 1px solid #e66a31;
