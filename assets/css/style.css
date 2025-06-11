@@ -1399,3 +1399,89 @@ section.home_banner.mb-5 {
     color: #e66a31;
 }
 /* Other Pages CSS End*/
+
+
+/* Contact Page CSS Start */
+
+
+.contact_card {
+    max-width: 500px;
+    background: #fff;
+    color: #111111;
+    border-radius: 0 1.25rem;
+    padding: 2.5rem 1.25rem;
+}
+
+.contact_wrap {
+    max-width: 81.25rem;
+    margin: 0 auto;
+    margin-top: -80px;
+    position: relative;
+        border-radius: 2.5rem;
+    z-index: 999999;
+}
+
+.form_container,
+.contact_form_content {
+    width: 100%;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+    width: 100%;
+    border: 1px solid transparent;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 0.625rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#contact textarea {
+    resize: none;
+    height: auto;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #1c1c1a;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 0.625rem;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.contact-btn {
+    color: #fff;
+    border-color: #fff;
+}
+
+.contact-btn:hover {
+    border-color: #000;
+}
+
+.form_container {
+    color: #fff;
+}
+
+.contact_form_content p {
+    font-size: 1.1rem;
+}
+
+.contact_form_content p a {
+    color: #e66a31;
+    font-weight: 500;
+}
+
+.form_container h2 {
+    color: #e66a31;
+}
+
+/* Contact Page CSS End */
