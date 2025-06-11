@@ -1083,12 +1083,12 @@ section.home_banner.mb-5 {
 }
 
 .ssl_logo {
-    height: 60px;
-    width: 140px;
+    height: 3.75rem;
+    width: 8.75rem;
 }
 
 .ssl_logo_inner {
-    height: 50px;
+    height: 3.75rem;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
