@@ -1572,7 +1572,7 @@ fieldset {
     margin-top: -5rem;
     position: relative;
     background-color: #111111;
-    z-index: 99999;
+    z-index: 99;
 }
 
 footer.footer.pt-80.main-scroll {
