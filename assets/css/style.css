@@ -717,7 +717,8 @@ section.home_banner.mb-5 {
 }
 
 .text_part p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .text_part h3 {
@@ -1485,3 +1486,73 @@ fieldset {
 }
 
 /* Contact Page CSS End */
+
+/* About Page CSS Start */
+.about_cards_rap {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.about_cards {
+    height: 100%;
+    width: 100%;
+    padding: 1.875rem;
+    border-radius: 2.5rem;
+    transition: 0.2s all linear;
+}
+.about_cards_image {
+    height: 15.625rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2.5rem;
+}
+.about_cards_image_inner {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2.5rem;
+}
+.about_cards_text p a {
+    color: #e66a31;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.about_cards_text p{
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+.about_cards_text ul li {
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.about_icon_cards {
+    background: #fff;
+    padding: 1.875rem;
+    border-radius: 2.5rem;
+    height: 100%;
+    transition: 0.2s all ease-in-out;
+    height: 100%;
+}
+.about_cards_sec2{
+    background-color: #111111;
+}
+.about_cards_sec2 .row {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.about_cards_icon {
+    height: 4.375rem;
+    margin-bottom: 20px;
+    width: 4.375rem;
+}
+.about_cards_icon_inner {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* About Page CSS End */
