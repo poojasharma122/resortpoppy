@@ -86,6 +86,9 @@
       .footer-links {
         padding-left: 1.75rem;
     }
+    .banner-bg {
+        height: 40.75rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -130,7 +133,12 @@
         flex-direction: column;
         gap: 1.25rem;
     }
-  
+    .banner-bg {
+        height: 35.75rem;
+    }
+    .site-footer {
+        padding: 55px 0 10px;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -161,7 +169,12 @@
         font-size: 1.5rem;
 
     }
-
+    .banner-bg {
+        height: 30.75rem;
+    }
+    .top-heading {
+        font-size: 2.2rem;
+    }
    
 }
 
@@ -175,6 +188,12 @@
     }
     .footer-top h4 {
         font-size: 1.5rem;
+    }
+    .banner-bg {
+        height: 25.75rem;
+    }
+    .brand-container a, .footer_logo a {
+        width: 13.75rem;
     }
    
 }
