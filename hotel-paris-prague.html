@@ -639,6 +639,31 @@
             });
         });
     </script>
+       <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownBtn = document.getElementById('languageDropdownBtn');
+            const dropdownMenu = document.querySelector('#langDropdown .dropdown-menu');
+
+            dropdownBtn.addEventListener('click', function (event) {
+                event.preventDefault();
+                dropdownMenu.classList.toggle('show');
+            });
+
+            document.querySelectorAll('.dropdown-item').forEach(item => {
+                item.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const href = this.getAttribute('href');
+                    window.location.href = href;
+                });
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!document.getElementById('langDropdown').contains(event.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    </script>
     <script src="assets/js/index.js"></script>
 </body>
 
