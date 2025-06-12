@@ -1035,7 +1035,7 @@ section.home_banner.mb-5 {
 
 .footer-links li a:hover,
 .footer-contact li:hover {
-    color: var(--black);
+    color: #e66a31;
 }
 
 .footer-contact li i {
@@ -1691,7 +1691,7 @@ footer.footer.pt-80.main-scroll {
 }
 
 .footer-pages-content-grp p a {
-    color: #e66a31;
+    color: #fff;
     display: inline-block;
     transition: 0.4s all ease-in-out;
     text-underline-offset: 4px;
