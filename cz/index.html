@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>ResortPoppy</title>
+</head>
+
+<body>
+    <!-- Header Start  Start-->
+    <header class="sticky-header">
+        <div class="container">
+            <nav class="navigation-bar">
+                <div class="brand-container">
+                    <a href="./" class="brand-link">
+                    </a>
+                </div>
+
+                <div class="menu-toggle-btn"></div>
+
+                <div class="navigation-menu">
+                    <ul>
+                        <li><a class="active" href="./">Domů</a></li>
+                        <li><a href="reviews">Recenze</a></li>
+                        <li class="list-dropdown">
+                            <div class="menu_dropdown hover">
+                                <a href="javascript:void(0)" id="guides-toggle">Průvodci
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                                    </svg>
+                                </a>
+                                <ul id="guides-dropdown">
+                                    <li><a href="where-to-stay-in-prague">Kde se ubytovat v Praze: Nejlepší oblasti a
+                                            luxusní hotely</a></li>
+                                    <li><a href="luxury-weekend-getaways-from-prague">Luxusní víkendové pobyty z
+                                            Prahy</a></li>
+                                    <li><a href="what-to-pack-for-a-5-star-hotel-stay-in-czechia">Co si sbalit na pobyt
+                                            v pětihvězdičkovém hotelu v Česku</a></li>
+                                    <li><a href="3-day-iuxury-Itinerary-in-prague">Luxusní třídenní itinerář v Praze</a>
+                                    </li>
+                                    <li><a href="casinos-in-czechia">Kasina v Česku</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="about-us">O nás</a></li>
+                        <li><a href="contact-us">Kontaktujte nás</a></li>
+                    </ul>
+                    <div class="menu-close-btn"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Home Banner Start -->
+    <section class="home_banner mb-5">
+        <div class="container">
+            <div class="home_banner_wrap">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="home_banner_content">
+                            <h1 class="home_bnr_txt mb-5">
+                                ResortPoppy.com – Porovnejte luxusní hotely po celé České republice
+                            </h1>
+                            <div class="home_srch_bar">
+                                <form class="hotel-search-form" id="hotelSearchForm" onsubmit="return false;">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <input type="text" id="location"
+                                                placeholder="Zadejte město nebo název hotelu" autocomplete="off"
+                                                required />
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <input type="date" id="arrival-date" required />
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <input type="date" id="departure-date" required />
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="guest-room-input" tabindex="0">
+                                                <input type="text" id="guest-room" readonly
+                                                    placeholder="Vyberte hosty a pokoje" />
+                                                <div class="dropdown" id="guestDropdown">
+                                                    <div class="dropdown-row">
+                                                        <label for="rooms-decrease">Pokoje</label>
+                                                        <div class="counter-controls">
+                                                            <button type="button" id="rooms-decrease"
+                                                                aria-label="Snížit počet pokojů">−</button>
+                                                            <div class="counter-value" id="rooms-count">1</div>
+                                                            <button type="button" id="rooms-increase"
+                                                                aria-label="Zvýšit počet pokojů">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-row">
+                                                        <label for="adults-decrease">Dospělí</label>
+                                                        <div class="counter-controls">
+                                                            <button type="button" id="adults-decrease"
+                                                                aria-label="Snížit počet dospělých">−</button>
+                                                            <div class="counter-value" id="adults-count">1</div>
+                                                            <button type="button" id="adults-increase"
+                                                                aria-label="Zvýšit počet dospělých">+</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-row">
+                                                        <label for="children-decrease">Děti</label>
+                                                        <div class="counter-controls">
+                                                            <button type="button" id="children-decrease"
+                                                                aria-label="Snížit počet dětí">−</button>
+                                                            <div class="counter-value" id="children-count">0</div>
+                                                            <button type="button" id="children-increase"
+                                                                aria-label="Zvýšit počet dětí">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <button type="submit" class="search-button" id="searchBtn">Hledat</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="container-scroller">
+                            <div class="scroller">
+                                <div class="scroller__inner">
+                                    <div class="scroller_images"
+                                        style="background-image:url(assets/images/banner_slider_img1.jpg);">
+                                    </div>
+                                    <div class="scroller_images"
+                                        style="background-image:url(assets/images/banner_slider_img2.jpg);">
+                                    </div>
+                                    <div class="scroller_images"
+                                        style="background-image:url(assets/images/banner_slider_img3.jpg);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller">
+                                <div class="scroller__inner reverse">
+                                    <div class="scroller_images"
+                                        style="background-image:url(assets/images/banner_slider_img4.jpg);">
+                                    </div>
+                                    <div class="scroller_images"
+                                        style="background-image:url(assets/images/banner_slider_img5.jpg);">
+                                    </div>
+                                    <div class="scroller_images"
+                                        style="background-image:url(assets/images/banner_slider_img6.jpg);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Banner End -->
+
+    <!-- After Banner Section Start -->
+    <div class="home_after_banner_sec py-8 aoshide bg_light">
+        <div class="container">
+            <div class="after_banner_wrap">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="img_part bg_center_cover"
+                            style="background-image: url('assets/images/home_after_banner_img.jpg');"></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text_part">
+                            <p class="mb-4">
+                                Vítejte na <span class="theme_bold">ResortPoppy.com,</span> přední platformě pro
+                                srovnání hotelů,
+                                která vám pomůže najít <span class="theme_bold">nejlepší luxusní ubytování v České
+                                    republice</span>.
+                                Ať už plánujete lázeňský pobyt v Karlových Varech, kulturní výlet do Prahy nebo
+                                romantický pobyt
+                                v Českém Krumlově, přinášíme vám <span class="theme_bold">nejlepší pětihvězdičkové a
+                                    butikové hotely</span>
+                                na jednom místě – s aktuálními cenami od důvěryhodných rezervačních portálů.
+                            </p>
+                            <p>
+                                Umožňujeme vám snadno <span class="theme_bold">porovnávat ceny, vybavení a hodnocení
+                                    hostů</span>,
+                                abyste mohli s jistotou a lehkostí rezervovat svůj dokonalý pobyt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- After Banner Section End -->
+
+    <!-- Home Featured Cards Section Start -->
+    <section class="home_featured_sec">
+        <div class="container">
+
+            <h2 class="section_heading text-center  mb-4"> Nahoru <span class="theme">Luxusní hotely</span> v <span
+                    class="theme">Česku</span></h2>
+            <p class="highlighted_txt text-center  mb-5">
+                Níže najdete 8 pečlivě vybraných hotelů, které představují to nejlepší z české pohostinnosti.
+                Klikněte a porovnejte ceny od předních cestovních poskytovatelů:
+            </p>
+
+            <div class="home_featured_slider">
+                <div>
+                    <div class="featured_card">
+                        <div class="featured_img">
+                            <div class="featured_img_inner"
+                                style="background-image: url(assets/images/hotel-img1.png);"></div>
+                        </div>
+                        <div class="featured_text">
+                            <a href="augustine-a-luxury-collection-hotel-prague" target="_blank">
+                                <h3>
+                                    Augustine, a Luxury Collection Hotel, Praha
+                                </h3>
+                            </a>
+                            <p class="featured_desc">
+                                Tento hotel sídlící ve 13. století v bývalém klášteře nabízí klidné nádvoří a výhled
+                                na Pražský hrad.
+                            </p>
+                            <div class="featured_btn_box mt-4">
+                                <a href="augustine-a-luxury-collection-hotel-prague.html" class="featured_btn butn"
+                                    target="_blank">Recenze</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="featured_card">
+                        <div class="featured_img">
+                            <div class="featured_img_inner"
+                                style="background-image: url(assets/images/hotel-img2.png);"></div>
+                        </div>
+                        <div class="featured_text">
+                            <a href="aria-hotel-prague" target="_blank">
+                                <h3>
+                                    Aria Hotel Praha
+                                </h3>
+                            </a>
+                            <p class="featured_desc">
+                                Hudebně laděný luxusní hotel v historické Malé Straně, jen pár kroků od Karlova
+                                mostu a hradu.
+                            </p>
+                            <div class="featured_btn_box mt-4">
+                                <a href="aria-hotel-prague" class="featured_btn butn" target="_blank">Recenze</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="featured_card">
+                        <div class="featured_img">
+                            <div class="featured_img_inner"
+                                style="background-image: url(assets/images/hotel_img3.png);"></div>
+                        </div>
+                        <div class="featured_text">
+                            <a href="hotel-esplanade-spa-and-golf-resort-mariánské-lázně" target="_blank">
+                                <h3>
+                                    Hotel Esplanade Spa & Golf Resort, Mariánské Lázně
+                                </h3>
+                            </a>
+                            <p class="featured_desc">
+                                Palác ve stylu secese nad lázeňským městem, známý špičkovými wellness službami a
+                                nádhernými výhledy.
+                            </p>
+                            <div class="featured_btn_box mt-4">
+                                <a href="hotel-esplanade-spa-and-golf-resort-mariánské-lázně" class="featured_btn butn"
+                                    target="_blank">Recenze</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="featured_card">
+                        <div class="featured_img">
+                            <div class="featured_img_inner"
+                                style="background-image: url(assets/images/hotel_img4.png);"></div>
+                        </div>
+                        <div class="featured_text">
+                            <a href="grandhotel-pupp-karlovy-vary" target="_blank">
+                                <h3>
+                                    Grandhotel Pupp, Karlovy Vary
+                                </h3>
+                            </a>
+                            <p class="featured_desc">
+                                Ikonický hotel z 18. století známý z Jamese Bonda – Casino Royale, nabízí nadčasový
+                                luxus a moderní wellness.
+                            </p>
+                            <div class="featured_btn_box mt-4">
+                                <a href="grandhotel-pupp-karlovy-vary" class="featured_btn butn"
+                                    target="_blank">Recenze</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="featured_card">
+                        <div class="featured_img">
+                            <div class="featured_img_inner"
+                                style="background-image: url(assets/images/hotel_img5.png);"></div>
+                        </div>
+                        <div class="featured_text">
+                            <a href="four-seasons-hotel-prague" target="_blank">
+                                <h3>
+                                    Four Seasons Hotel Praha
+                                </h3>
+                            </a>
+                            <p class="featured_desc">
+                                Luxus na břehu Vltavy spojující barokní a moderní eleganci s výjimečnými službami v
+                                centru města.
+                            </p>
+                            <div class="featured_btn_box mt-4">
+                                <a href="four-seasons-hotel-prague" class="featured_btn butn"
+                                    target="_blank">Recenze</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="featured_card">
+                        <div class="featured_img">
+                            <div class="featured_img_inner"
+                                style="background-image: url(assets/images/hotel_img6.png);"></div>
+                        </div>
+                        <div class="featured_text">
+                            <a href="chateau-herálec-boutique-hotel-and-spa-vysočina-region" target="_blank">
+                                <h3>
+                                    Chateau Herálec Boutique Hotel & Spa
+                                </h3>
+                            </a>
+                            <p class="featured_desc">
+                                Venkovské útočiště v renesančním zámku s gurmánskou kuchyní a zámeckým wellness
+                                centrem.
+                            </p>
+                            <div class="featured_btn_box mt-4">
+                                <a href="chateau-herálec-boutique-hotel-and-spa" class="featured_btn butn"
+                                    target="_blank">Recenze</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="featured_card">
+                        <div class="featured_img">
+                            <div class="featured_img_inner"
+                                style="background-image: url(assets/images/hotel-img7.png);"></div>
+                        </div>
+                        <div class="featured_text">
+                            <a href="hotel-paris-prague" target="_blank">
+                                <h3>
+                                    Hotel Paris Praha
+                                </h3>
+                            </a>
+                            <p class="featured_desc">
+                                Krásně zachovaný hotel v secesním stylu jen pár kroků od Staroměstského náměstí –
+                                ideální pro milovníky kultury a pohodlí.
+                            </p>
+                            <div class="featured_btn_box mt-4">
+                                <a href="hotel-paris-prague" class="featured_btn butn" target="_blank">Recenze</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="featured_card">
+                        <div class="featured_img">
+                            <div class="featured_img_inner"
+                                style="background-image: url(assets/images/hotel_img8.png);"></div>
+                        </div>
+                        <div class="featured_text">
+                            <a href="the-emblem-hotel-prague" target="_blank">
+                                <h3>
+                                    The Emblem Hotel, Praha
+                                </h3>
+                            </a>
+                            <p class="featured_desc">
+                                Moderní luxus s terasou na střeše a wellness klubem, kousek od Židovské čtvrti a
+                                Starého Města.
+                            </p>
+                            <div class="featured_btn_box mt-4">
+                                <a href="the-emblem-hotel-prague" class="featured_btn butn" target="_blank">Recenze</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Featured Cards Section End-->
+
+
+    <!-- Home Why Us Section Start -->
+    <section class="home_why_us_sec py-8 bg_light">
+        <div class="container">
+            <h2 class="section_heading text-center  mb-5">Proč porovnávat s <span class="theme">ResortPoppy?</span>
+            </h2>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="why_us_card">
+                        <h3 class="why_us_card-title">Pečlivě vybraný seznam luxusních a pětihvězdičkových hotelů
+                        </h3>
+                        <div class="why_us_card_img_outer">
+                            <div class="why_us_img bg_center_contain  mt-4"
+                                style="background-image: url(assets/images/home_why1.svg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="why_us_card">
+                        <h3 class="why_us_card-title">Srovnání cen v reálném čase z předních cestovních portálů</h3>
+                        <div class="why_us_card_img_outer">
+                            <div class="why_us_img bg_center_contain  mt-4"
+                                style="background-image: url(assets/images/home_why2.svg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="why_us_card">
+                        <h3 class="why_us_card-title">Transparentní recenze hostů a přehled hodnocení</h3>
+                        <div class="why_us_card_img_outer">
+                            <div class="why_us_img bg_center_contain  mt-4"
+                                style="background-image: url(assets/images/home_why3.svg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="why_us_card">
+                        <h3 class="why_us_card-title">Žádné poplatky za rezervaci, nikdy</h3>
+                        <div class="why_us_card_img_outer">
+                            <div class="why_us_img bg_center_contain  mt-4"
+                                style="background-image: url(assets/images/home_why4.svg);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 d-flex">
+                    <div class="why_us_card">
+                        <h3 class="why_us_card-title">Zaměřeno výhradně na destinace v Česku</h3>
+                        <div class="why_us_card_img_outer">
+                            <div class="why_us_img bg_center_contain  mt-4"
+                                style="background-image: url(assets/images/home_why5.svg);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Why Us Section End -->
+
+
+    <!-- Home Start Search Section Start -->
+    <section class="home_start_sec py-8">
+        <div class="container">
+            <h2 class="section_heading text-center  mb-4">Začněte hledat</h2>
+            <p class="highlighted_txt text-center  mb-5">
+                Prozkoumejte nejlepší města v České republice:
+            </p>
+
+            <div class="home_start_search_wrap">
+                <div class="row">
+                    <div class="col-xl-3 col-sm-6 mb-4 mb-xl-0">
+                        <a class="home_start_search_card featured_card" href="javascript:void(0)">
+                            <div class="featured_img">
+                                <div class="featured_img_inner"
+                                    style="background-image: url(assets/images/home_place1_img.jpg);"></div>
+                            </div>
+                            <div class="featured_text">
+                                <h3>
+                                    Luxusní hotely v Praze
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 mb-4 mb-xl-0">
+                        <a class="home_start_search_card featured_card" href="javascript:void(0)">
+                            <div class="featured_img">
+                                <div class="featured_img_inner"
+                                    style="background-image: url(assets/images/home_place2_img.jpg);"></div>
+                            </div>
+                            <div class="featured_text">
+                                <h3>
+                                    Lázeňské resorty v Karlových Varech
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 mb-4 mb-xl-0">
+                        <a class="home_start_search_card featured_card" href="javascript:void(0)">
+                            <div class="featured_img">
+                                <div class="featured_img_inner"
+                                    style="background-image: url(assets/images/home_place3_img.jpg);"></div>
+                            </div>
+                            <div class="featured_text">
+                                <h3>
+                                    Elegantní hotely v Českém Krumlově
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 mb-4 mb-xl-0">
+                        <a class="home_start_search_card featured_card" href="javascript:void(0)">
+                            <div class="featured_img">
+                                <div class="featured_img_inner"
+                                    style="background-image: url(assets/images/home_place4_img.jpg);"></div>
+                            </div>
+                            <div class="featured_text">
+                                <h3>
+                                    Butikové pobyty v Brně
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Start Search Section End -->
+
+
+    <!-- Home Plan Better Section Start -->
+    <section class="home_plan_better py-8 bg_light">
+        <div class="container">
+            <div class="after_banner_wrap">
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="text_part">
+                            <h3 class="mb-4">
+                                Plánujte lépe, zůstaňte lépe
+                            </h3>
+                            <p class="mb-4">
+                                Na <span class="theme_bold">ResortPoppy.com</span> věříme, že si každá cesta zaslouží
+                                dokonalé ubytování. Jsme tu, abychom vám pomohli
+                                objevit a rezervovat <span class="theme_bold">nejlepší luxusní hotely v Česku</span> za
+                                správnou cenu.
+                            </p>
+                            <p class="mb-4">
+                                <strong> Porovnejte. Vyberte. Rezervujte.</strong>
+                            </p>
+                            <p>
+                                Jen to nejlepší, jen na <a href="./">ResortPoppy.com.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="img_part bg_center_contain"
+                            style="background-image: url('assets/images/home_last_img.svg');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Plan Better Section End-->
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-logo footer-col">
+                        <a href="index.html" class="bg-repeat-contain"></a>
+                        <p class="my-4">
+                            Vítejte na <span class="theme_bold">ResortPoppy.com,</span> přední platformě pro
+                            srovnávání
+                            hotelů, která vám pomůže najít nejlepší luxusní ubytování v České republice.
+                        </p>
+                        <p>
+                            Umožňujeme snadné porovnání cen, vybavení a hodnocení hostů, abyste si mohli s jistotou
+                            a
+                            pohodlím rezervovat ideální pobyt.
+                        </p>
+                    </div>
+                    <div class="footer-links footer-col">
+                        <h4>Užitečné odkazy</h4>
+                        <ul>
+                            <li><a href="privacy-and-cookies-policy">Zásady ochrany osobních údajů a používání
+                                    cookies</a></li>
+                            <li><a href="terms-and-conditions">Všeobecné podmínky</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact footer-col">
+                        <h4>Kontaktujte nás</h4>
+                        <ul>
+                            <li>
+                                <h5>
+                                    Email:
+                                </h5>
+                            </li>
+                            <li> <a href="mailto:support@resortpoppy.com">support@resortpoppy.com</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5>
+                                    Adresa:
+                                </h5>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.google.com/maps/place/362+15,+Hamersk%C3%A1+152%2F1,+360+01+B%C5%99ezov%C3%A1-Karlovy+Vary+1,+Czechia/@50.2071289,12.8711699,17z/data=!3m1!4b1!4m5!3m4!1s0x47a09be6be02f6b3:0x8f9561726d51b555!8m2!3d50.2071289!4d12.8711699?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D">Hamerská
+                                    1, 362 15 Březová, Karlovy Vary, Česká republika </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h5>
+                                    Telefon:
+                                </h5>
+                            </li>
+                            <li> <a href="tel:+420353224849">+420 353 224 849</a></li>
+                        </ul>
+                        <div class="social-icons mt-4">
+                            <ul>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                            </path>
+                                        </svg></a></li>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <path
+                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                            </path>
+                                        </svg></a></li>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                            </path>
+                                        </svg></a></li>
+                                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                            <path
+                                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z">
+                                            </path>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright © 2025 <span class="theme">ResortPoppy.com</span> Všechna práva vyhrazena.</p>
+                    <div class="ssl_logo">
+                        <div class="ssl_logo_inner bg-repeat-contain"
+                            style="background-image: url(assets/images/ssl.png);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <div class="loader_img" style="background-image: url(assets/images/logo.svg);"></div>
+    </div>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>

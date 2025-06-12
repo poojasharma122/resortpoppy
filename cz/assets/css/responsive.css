@@ -1,0 +1,248 @@
+@media screen and (max-width:1199px) {
+    html {
+        font-size: 15px;
+    }
+    .home_banner_wrap>.row {
+        flex-direction: column-reverse !important;
+    }
+    .hotel-search-form .row .col-lg-3, .hotel-search-form .row .col-lg-2 {
+        padding-bottom: 15px;
+        padding-left: 0;
+    }
+    .home_banner_content {
+        padding-top: 1.25rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:1024px){
+    .text_part {
+        padding: 2rem  1.25rem 0  1.25rem;
+    }
+    .py-8 {
+        padding: 4rem 0;
+    }
+    .footer-logo p {
+        font-size: 1.1rem;
+    }
+    .home_plan_better .row {
+        flex-direction: column-reverse;
+    }
+    .hotels_full_review_section {
+        padding: 4.25rem 0;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .menu-wrapper ul {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navigation-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        background-color: black;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+        z-index: 100;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .menuToggle .navigation-menu {
+        transform: translateX(0);
+        justify-content: flex-start;
+    }
+
+    .navigation-menu ul {
+        flex-direction: column;
+
+    }
+
+    .menu-toggle-btn {
+        display: block;
+    }
+
+    .menu-close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        text-align: end;
+        z-index: 55;  
+        height: 2rem;
+        width: 2rem;
+    } 
+    .img_part {
+        height: 26.66rem;
+      }
+      .footer-links {
+        padding-left: 1.75rem;
+    }
+    .banner-bg {
+        height: 40.75rem;
+    }
+    .hotels_name_img h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+    .img_part {
+        height: 20.33rem;
+      }
+      .py-8 {
+        padding: 3rem 0;
+    }
+    .section_heading {
+        font-size: 2rem;
+    }
+    .footer-top {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+        grid-gap: 2.9375rem;
+    }
+
+    .footer-col:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-col:nth-child(2) {
+        grid-column: 1; 
+    }
+
+    .footer-col:nth-child(3) {
+        grid-column: 2; 
+    }
+    .footer-links {
+        padding-left: 0;
+    }
+    .why_us_card-title {
+        font-size: 1rem;
+    }
+    .footer-bottom {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .banner-bg {
+        height: 35.75rem;
+    }
+    .site-footer {
+        padding: 55px 0 10px;
+    }
+    .no_padding_left {
+        padding-left: 1rem;
+    }
+    .hotel_full_img_outer {
+          margin-bottom: 2rem;
+    }
+    .hotel_desc_card h2 {
+        font-size: 1.6rem;
+    }
+    .row.hotel_middle_row {
+        padding: 1.5rem 0;
+    }
+    .top-heading.guide_heading {
+        font-size: 1.8rem;
+    }
+    .contact_wrap {
+          padding: 1.5rem;
+    }
+    .contact_card {
+        max-width: 100%;
+      }
+      .form_container {
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .table_wrap {
+        overflow-x: scroll;
+    }
+    table {
+        min-width: 31.25rem;
+    }
+    .highlighted_txt {
+        font-size: 1rem;
+    }
+    .section_heading {
+        font-size: 1.7rem;
+    }
+    .footer-logo p {
+        font-size: 1rem;
+    }
+    .text_part h3 {
+        font-size: 1.5rem;
+ 
+    }
+    .why_us_card-title {
+        font-size: 1.1rem;
+    }
+    .featured_img {
+        height: 15.75rem;
+    }
+    .featured_text h3 {
+        font-size: 1.5rem;
+
+    }
+    .banner-bg,.banner-bg.guides_banner
+     {
+        height: 30.75rem;
+    }
+    .top-heading {
+        font-size: 2.2rem;
+    }
+    .row.hotel_middle_row {
+        padding: 1rem 0;
+    }
+    .top-heading.guide_heading {
+        font-size: 1.5rem;
+    }
+    .footer-pages-wrap {
+        padding: 3.125rem 1rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .footer-col:nth-child(2) {
+        grid-column: 1/-1; 
+    }
+
+    .footer-col:nth-child(3) {
+        grid-column: 1/-1; 
+    }
+    .footer-top h4 {
+        font-size: 1.5rem;
+    }
+    .banner-bg ,.banner-bg.guides_banner {
+        height: 25.75rem;
+    }
+    .brand-container a, .footer_logo a {
+        width: 13.75rem;
+    }
+    .footer-bottom p {
+         font-size: 0.8rem;
+    }
+    .menu_dropdown ul {
+        min-width: 23rem;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.5rem;
+     }
+}
