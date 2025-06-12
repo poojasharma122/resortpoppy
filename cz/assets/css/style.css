@@ -356,6 +356,7 @@ span.theme_bold {
 
 .navigation-menu {
     display: flex;
+    margin-left: auto;
 }
 
 .navigation-menu ul {
@@ -1658,3 +1659,76 @@ table {
     max-width: 600px;
 }
 /* Footer Pages CSS End*/
+
+
+
+/* Language Dropdown CSS */
+.language_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    border-radius: 8px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    background-color: #111111;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    top: 100%;
+    display: none;
+    border: 2px solid #e66a31;
+}
+
+
+.site-header .dropdown-toggle.show {
+    color: #333;
+}
+
+.dropdown_img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.language_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-item {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content !important;
+    white-space: wrap;
+    transition: none;
+}
+.dropdown-item:hover{
+    background-color: #111111 !important;
+}
+
+.dropdown-item  span {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+/* Language Dropdown CSS */

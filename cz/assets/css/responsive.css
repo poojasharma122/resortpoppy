@@ -71,6 +71,7 @@
 
     .menu-toggle-btn {
         display: block;
+        margin-left: auto;
     }
 
     .menu-close-btn {

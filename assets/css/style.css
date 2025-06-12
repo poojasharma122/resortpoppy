@@ -229,15 +229,19 @@ span.theme_bold {
 .bg_light {
     background-color: #f5f5f7;
 }
-.bg_dark{
+
+.bg_dark {
     background-color: #111111;
 }
+
 .text_white {
     color: #fff;
 }
-.text_theme{
+
+.text_theme {
     color: #e66a31;
 }
+
 .aoshide {
     overflow: hidden;
 }
@@ -299,7 +303,7 @@ span.theme_bold {
     width: 100%;
     margin: 0 auto;
     z-index: 9999;
-    transition: all 0.3s ease-in-out;   
+    transition: all 0.3s ease-in-out;
     padding: 0.9375rem 0px;
     background-color: #111111;
 }
@@ -356,6 +360,7 @@ span.theme_bold {
 
 .navigation-menu {
     display: flex;
+    margin-left: auto;
 }
 
 .navigation-menu ul {
@@ -512,9 +517,11 @@ li.list-dropdown .menu_dropdown ul li a {
     height: 15px;
     margin-top: -5px;
 }
-.navigation-menu ul li a.active svg  {
+
+.navigation-menu ul li a.active svg {
     fill: #e66a31;
 }
+
 /* Header CSS End */
 
 /* Banner CSS Start */
@@ -558,7 +565,6 @@ li.list-dropdown .menu_dropdown ul li a {
     position: absolute;
     top: 45px;
     right: 0;
-    background: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 12px 16px;
@@ -701,9 +707,11 @@ section.home_banner.mb-5 {
     background-size: cover;
     border-radius: 2.5rem;
 }
+
 .home_bnr_txt {
     line-height: 1.3;
 }
+
 /* Image text Section start */
 
 .before_after_banner p {
@@ -795,7 +803,7 @@ section.home_banner.mb-5 {
 }
 
 .slick-slide {
-    height: inherit;  
+    height: inherit;
 }
 
 .slick-track {
@@ -1078,6 +1086,7 @@ section.home_banner.mb-5 {
     fill: #fff;
     transition: 0.2s all ease-in-out;
 }
+
 .social-icons li a:hover svg {
     fill: #e66a31;
 }
@@ -1170,14 +1179,17 @@ section.home_banner.mb-5 {
     color: #222222;
     display: block;
 }
+
 .hotels_name_img {
     height: 100%;
     overflow: hidden;
 }
+
 .hotels_full_review_section {
     padding: 6.25rem 0;
     margin-top: 5rem;
 }
+
 .hotels_rating_spec_txt {
     overflow: hidden;
     display: flex;
@@ -1185,6 +1197,7 @@ section.home_banner.mb-5 {
     justify-content: center;
     height: 100%;
 }
+
 .hotels_full_review_wrap {
     width: 100%;
 }
@@ -1192,47 +1205,57 @@ section.home_banner.mb-5 {
 .hotels_rating_spec_txt h3 {
     color: #fff;
 }
+
 .hotels_rating_spec_txt ul li p {
     color: #fff;
     font-size: 1.1rem;
     margin-bottom: 0.625rem;
 }
+
 .hotels_rating_spec_txt ul li {
     list-style-type: disc;
     margin-left: 1.875rem;
 }
+
 .hotel_desc_card ul li {
     list-style-type: disc;
     margin-left: 1.25rem;
     margin-bottom: 0;
 }
-.hotels_rating_spec_txt ul li::marker{
+
+.hotels_rating_spec_txt ul li::marker {
     color: #e66a31;
     font-size: 1.1rem;
 }
+
 .hotel_full_img_outer {
     height: 25rem;
     width: 100%;
     overflow: hidden;
-    border-radius:2.5rem;
+    border-radius: 2.5rem;
 }
+
 .hotel_full_img {
     height: 100%;
     width: 100%;
     border-radius: 2.5rem;
 }
-.no_padding{
+
+.no_padding {
     padding: 0;
 }
-.no_padding_left{
-    padding-left:0;
+
+.no_padding_left {
+    padding-left: 0;
 }
+
 .hotels_name_img>p {
     font-size: 1.1rem;
     font-weight: 500;
     color: #484747;
     margin-bottom: 20px;
 }
+
 .hotel_desc_card {
     background: #fff;
     padding: 30px 20px;
@@ -1245,51 +1268,64 @@ section.home_banner.mb-5 {
     height: 5rem;
     width: 100%;
 }
+
 .hotels_rooms_sec {
     height: 100%;
 }
+
 .hotel_rooms_icon {
     height: 100%;
     width: 5rem;
 }
+
 .row.hotel_middle_row {
     padding: 2rem;
     border-radius: 2.5rem;
     max-width: 100%;
     margin: 0 auto;
 }
+
 .hotels_full_review_section p {
     line-height: 1.5;
 }
+
 .hotels_full_review_wrap .row {
     max-width: 100%;
     margin: 0 auto;
 }
+
 .hotel_outer_linking_btn {
     border: 1px solid #e66a31;
     overflow: hidden;
 }
-.hotel_outer_linking_btn:hover{
+
+.hotel_outer_linking_btn:hover {
     border-color: #fff;
 }
+
 .hotel_final_verdict {
     padding: 1.25rem;
 }
+
 .hotel_desc_card ul li::marker {
     color: #e66a31;
 }
-.hotel_desc_card ul.inner_ul  li {
+
+.hotel_desc_card ul.inner_ul li {
     list-style-type: disc;
     margin-left: 2.5rem;
 }
-.hotel_desc_card ul.inner_ul  li::marker {
+
+.hotel_desc_card ul.inner_ul li::marker {
     list-style-type: disc;
     margin-left: 2.5rem;
     color: #000;
 }
-.rounded{
+
+.rounded {
     border-radius: 2.5rem !important;
 }
+
 .review_rating_txt.mb-3 {
     padding: 0.625rem 1.875rem;
     background: #e66a31;
@@ -1297,33 +1333,41 @@ section.home_banner.mb-5 {
     color: #fff;
     border-radius: 40px;
 }
+
 .hotel_desc_card h2 {
     font-size: 1.8rem;
     line-height: 1.3;
 }
+
 .hotel_desc_card h3 {
     font-size: 1.5rem;
     line-height: 1.3;
 }
+
 .hotels_rating_spec_txt h4 {
     color: #e66a31;
     font-size: 1.4rem;
 }
+
 .hotels_name_img h2 {
     font-size: 2.5rem;
     color: #e66a31;
     line-height: 1.3;
 }
+
 .hotel_final_verdict p a {
     color: #e66a31;
 }
+
 .hotel_desc_card p {
     margin-bottom: 10px;
     font-weight: 500;
 }
+
 .hotels_rating_spec_txt h3 {
     color: #e66a31;
 }
+
 /* Hotels Full Details Pages CSS End */
 
 /* Other Pages CSS Start */
@@ -1336,7 +1380,7 @@ section.home_banner.mb-5 {
     top: 0;
     bottom: auto;
     left: 0%;
-    right: 0%;   
+    right: 0%;
     display: flex;
     align-items: center;
     margin-top: 56px;
@@ -1344,9 +1388,11 @@ section.home_banner.mb-5 {
     background-color: rgba(0 0 0/60%);
     background-blend-mode: multiply;
 }
+
 .banner-bg .container {
     position: relative;
 }
+
 .banner-bg span {
     background-color: #e66a31;
     color: #fff;
@@ -1357,6 +1403,7 @@ section.home_banner.mb-5 {
     border-radius: 40px;
     display: none;
 }
+
 .top-heading {
     font-size: 2.8rem;
     font-style: normal;
@@ -1366,6 +1413,7 @@ section.home_banner.mb-5 {
 .top-heading.guide_heading {
     font-size: 2.1rem;
 }
+
 .banner-bg.guides_banner {
     height: 35rem;
 }
@@ -1374,36 +1422,45 @@ section.home_banner.mb-5 {
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 .guides_content_sec .text_part.less_padding {
     padding: 2rem 0;
 }
+
 .guides_content_sec .text_part p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 10px;
 }
+
 .guides_content_sec .text_part ul li {
     list-style-type: disc;
     margin-left: 1rem;
 }
-.guides_content_sec  .text_part p a {
+
+.guides_content_sec .text_part p a {
     font-weight: 700;
 }
+
 .final_verdict_reviews p {
     color: #fff;
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
-.final_verdict_reviews p strong{
+
+.final_verdict_reviews p strong {
     color: #e66a31;
 }
-.final_verdict_reviews ul li{
+
+.final_verdict_reviews ul li {
     list-style-type: disc;
     margin-left: 1rem;
 }
-.final_verdict_reviews ul li::marker{
+
+.final_verdict_reviews ul li::marker {
     color: #e66a31;
 }
+
 /* Other Pages CSS End*/
 
 
@@ -1498,6 +1555,7 @@ fieldset {
     max-width: 75rem;
     margin: 0 auto;
 }
+
 .about_cards {
     height: 100%;
     width: 100%;
@@ -1505,12 +1563,14 @@ fieldset {
     border-radius: 2.5rem;
     transition: 0.2s all linear;
 }
+
 .about_cards_image {
     height: 15.625rem;
     width: 100%;
     overflow: hidden;
     border-radius: 2.5rem;
 }
+
 .about_cards_image_inner {
     height: 100%;
     width: 100%;
@@ -1519,16 +1579,19 @@ fieldset {
     background-repeat: no-repeat;
     border-radius: 2.5rem;
 }
+
 .about_cards_text p a {
     color: #e66a31;
     font-weight: 500;
     text-decoration: underline;
     text-underline-offset: 5px;
 }
-.about_cards_text p{
+
+.about_cards_text p {
     line-height: 1.5;
     margin-bottom: 5px;
 }
+
 .about_cards_text ul li {
     list-style-type: disc;
     margin-left: 1rem;
@@ -1542,18 +1605,22 @@ fieldset {
     transition: 0.2s all ease-in-out;
     height: 100%;
 }
-.about_cards_sec2{
+
+.about_cards_sec2 {
     background-color: #111111;
 }
+
 .about_cards_sec2 .row {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .about_cards_icon {
     height: 4.375rem;
     margin-bottom: 20px;
     width: 4.375rem;
 }
+
 .about_cards_icon_inner {
     height: 100%;
     width: 100%;
@@ -1561,6 +1628,7 @@ fieldset {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 /* About Page CSS End */
 
 
@@ -1632,29 +1700,105 @@ footer.footer.pt-80.main-scroll {
 .footer-pages-content-grp p a:hover {
     text-decoration: underline;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
-     border: 1px solid #818181;
-  }
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #818181;
+}
 
-  th, td {
+th,
+td {
     padding: 12px 16px;
     text-align: left;
     border: 1px solid #818181;
-  }
+}
 
-  th {
+th {
     background-color: #E66A31;
     color: #fff;
-  }
+}
 
-  tr:hover {
+tr:hover {
     background-color: #f1f1f1;
-  }
-  .table_wrap {
+}
+
+.table_wrap {
     max-width: 600px;
 }
+
 /* Footer Pages CSS End*/
+
+
+/* Language Dropdown CSS */
+.language_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    border-radius: 8px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    background-color: #111111;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    top: 100%;
+    display: none;
+    border: 2px solid #e66a31;
+}
+
+
+.site-header .dropdown-toggle.show {
+    color: #333;
+}
+
+.dropdown_img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.language_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-item {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content !important;
+    white-space: wrap;
+    transition: none;
+}
+.dropdown-item:hover{
+    background-color: #111111 !important;
+}
+
+.dropdown-item  span {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+/* Language Dropdown CSS */

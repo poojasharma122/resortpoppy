@@ -222,18 +222,29 @@ window.addEventListener('load', function () {
 
 
 // Menu Dropdown JS Start
-document.addEventListener("DOMContentLoaded", function () {
-	const toggle = document.getElementById("guides-toggle");
-	const dropdown = toggle.closest(".menu_dropdown");
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownBtn = document.getElementById('languageDropdownBtn');
+    const dropdownMenu = document.querySelector('#langDropdown .dropdown-menu');
 
-	document.addEventListener("click", function (e) {
-		const isClickInside = dropdown.contains(e.target);
+    dropdownBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        dropdownMenu.classList.toggle('show');
+    });
 
-		if (isClickInside) {
-			dropdown.classList.toggle("open");
-		} else {
-			dropdown.classList.remove("open");
-		}
-	});
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', function (event) {
+            event.preventDefault();
+            const href = this.getAttribute('href');
+            window.location.href = href;
+        });
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!document.getElementById('langDropdown').contains(event.target)) {
+            dropdownMenu.classList.remove('show');
+        }
+    });
 });
-// Menu Dropdown JS Start
+// Menu Dropdown JS End
+
+
