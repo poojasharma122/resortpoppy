@@ -563,7 +563,7 @@ li.list-dropdown .menu_dropdown ul li a {
 
 .dropdown {
     position: absolute;
-    top: 45px;
+    top: 50px;
     right: 0;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -571,7 +571,8 @@ li.list-dropdown .menu_dropdown ul li a {
     box-shadow: 0 3px 12px rgb(0 0 0 / 0.1);
     z-index: 1000;
     display: none;
-    min-width: 300px;
+    width: 100%;
+    background: #fff;
 }
 
 .dropdown.visible {
